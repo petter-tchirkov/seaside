@@ -5,7 +5,7 @@ const discordBtn = document.querySelectorAll(".discord a");
 
 discordBtn.forEach((btn) => {
   btn.addEventListener("mouseover", (e) => {
-    btn.querySelector("img").src = "src/images/svg/discord.svg";
+    btn.querySelector("img").src = "src/images/icon/ds-black.svg";
   });
   btn.addEventListener("mouseout", (e) => {
     btn.querySelector("img").src = "src/images/icon/ds-gradient.svg";
