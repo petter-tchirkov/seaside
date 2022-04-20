@@ -11,7 +11,8 @@
 <body>
   <div class="bg-black">
     <div class="popup hidden flex flex-col items-center justify-center fixed w-screen h-screen z-50 px-6 lg:px-24">
-      <div class="flex max-w-[580px] flex-col items-center py-6 px-3 border-gold-gradient-whole relative mb-4">
+      <div
+        class="popup__content flex max-w-[580px] flex-col items-center py-6 px-3 border-gold-gradient-whole relative mb-4">
         <h2 class="uppercase text-white text-2xl">introduction</h2>
         <p class="text-white mb-4 text-base text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
           eu
@@ -27,18 +28,22 @@
               d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" />
           </svg>
         </div>
-        <form action="/" class="flex flex-col w-full px-2">
-          <label class="flex flex-col text-2xl uppercase text-white mb-4" for="name">
+        <form action="/" class="flex flex-col w-full px-2 btn-gold items-center">
+          <label class="w-full flex flex-col text-2xl uppercase text-white mb-4" for="name">
             name
             <input type="text" placeholder="Enter name" class="text-base text-white border-0 border-b-2">
           </label>
-          <label class="flex flex-col text-2xl uppercase text-white mb-4" for="email">
+          <label class="w-full flex flex-col text-2xl uppercase text-white mb-4" for="email">
             email
             <input type="text" placeholder="Enter email" class="text-base text-white border-0 border-b-2">
           </label>
-          <a class="w-full flex justify-center" href="/light-paper">
-            <div class="seaside__btn w-max px-5 py-2.5">
-              <span class="uppercase gold">send my contacts</span>
+          <a href="" class="w-fit">
+            <div class="flex items-center gap-3 px-5 py-3.5">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="gold uppercase">light paper</p>
             </div>
           </a>
         </form>
@@ -128,11 +133,11 @@
       </div>
     </div>
     <div class="mint h-36 flex items-center justify-center relative overflow-hidden mb-14 lg:mb-32">
-      <img class="absolute -left-[17rem] md:-left-[33rem] lg:-left-60" src="src/images/png/figure-wave-1.png" alt="">
+      <img class="absolute -left-[17rem] md:-left-[33rem] xl:-left-60" src="src/images/png/figure-wave-1.png" alt="">
       <h2 class="gold uppercase text-2xl lg:text-5xl">mint date: tba</h2>
-      <img class="absolute -right-[17rem] md:-right-[33rem] lg:-right-60" src="src/images/png/figure-wave-2.png" alt="">
+      <img class="absolute -right-[17rem] md:-right-[33rem] xl:-right-60" src="src/images/png/figure-wave-2.png" alt="">
     </div>
-    <div class="px-6 lg:px-0 apex mb-32 lg:mb-[450px] flex justify-center">
+    <div class="px-6 xl:px-0 apex mb-32 xl:mb-[450px] flex justify-center">
       <div class="apex__content flex flex-col lg:flex-row items-center gap-2 lg:gap-32">
         <img class="bg-black max-w-[204px] lg:max-w-max" src="src/images/img-1.jpg" alt="">
         <div class="apex__text max-w-[700px]">
@@ -168,9 +173,9 @@
         </div>
       </div>
     </div>
-    <div class="px-6 lg:px-0 paper flex justify-center mb-20 relative overflow-hidden˚">
+    <div class="px-6 xl:px-0 paper flex justify-center relative overflow-hidden˚">
       <div class="paper__content flex gap-5">
-        <div class="paper__video hidden lg:block">
+        <div class="paper__video hidden xl:block">
           <iframe width="720" height="420" src="https://www.youtube.com/embed/DHfRfU3XUEo" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -200,10 +205,10 @@
           </div>
         </div>
       </div>
-      <img class="absolute max-w-[300px] lg:max-w-[100%] -top-[40%] lg:-top-[120%] right-0 overflow-hidden"
+      <img class="absolute max-w-[300px] xl:max-w-[100%] -top-[40%] xl:-top-[120%] right-0 overflow-hidden"
         src="/src/images/png/img-2.png" alt="">
     </div>
-    <div class="roadmap flex justify-center mb-20 px-6 lg:px-0">
+    <div class="roadmap pt-20 flex justify-center mb-20 px-6 xl:px-0">
       <div class="roadmap__item max-w-3xl">
         <h2 class="text-gold text-center uppercase text-2xl lg:text-[40px] mb-2 lg:mb-4">roadmap</h2>
         <h3 class="text-gold text-center uppercase text-base lg:text-2xl mb-4">phase 1</h3>
@@ -216,7 +221,7 @@
         </p>
       </div>
     </div>
-    <div class="steps flex justify-center lg:justify-end relative mb-32">
+    <div class="steps flex justify-center lg:justify-end relative mb-32 radial-bg">
       <img class="hidden lg:block absolute w-max" src="./src/images/png/figure.png" alt="">
       <div class="steps__grid">
         <div class="steps__item max-w-[330px] col-start-5 ml-4">
@@ -224,8 +229,11 @@
           <h4 class="text-gold mb-4 text-center lg:text-left">Community Contests</h4>
           <p class="text-white text-center lg:text-left">During the first phase there will be several giveaways and
             contests held in our official
-            Discord server intended to benefit the most active and talented people. Be sure, our earliest members will
+            Discord server
+          <p class="hidden xl:inline-block">intended to benefit the most active and talented people. Be sure, our
+            earliest members will
             be our biggest beneficiaries!</p>
+          </p>
         </div>
         <div class="steps__item max-w-[330px]">
           <img src="./src/images/png/road-map-2.png" alt="" class="lg:hidden py-8">
@@ -242,14 +250,14 @@
             along with the detailed information regaarding the Restaurant Chain, Ore Mining and Play2Earn(?) investment
             opportunities.</p>
         </div>
-        <div class="steps__item max-w-[330px] radial-bg">
+        <div class="steps__item max-w-[330px]">
           <img src="./src/images/png/road-map-2.png" alt="" class="lg:hidden py-8">
           <h4 class="text-gold mb-4 text-center lg:text-left">CSR Program Reveal</h4>
           <p class="text-white text-center lg:text-left">We want to make a difference through our corporate social
             responsibility program,
             details of which will be disclosed down the road.</p>
         </div>
-        <div class="steps__item max-w-[330px] pt-12">
+        <div class="steps__item max-w-[330px] ml-4 xl:ml-0 lg:pt-12 xl:pt-0">
           <img src="./src/images/png/road-map-4.png" alt="" class="lg:hidden py-8 odd-reverse">
           <h4 class="text-gold mb-4 text-center lg:text-left">Reveal Event & giveaway results</h4>
           <p class="text-white text-center lg:text-left">The Giveaway results will be published during the Revelation
@@ -259,7 +267,7 @@
       </div>
     </div>
     <div class="member mb-12 lg:mb-32 flex justify-center">
-      <div class="member__content px-6 lg:px-0 max-w-7xl flex flex-col items-center">
+      <div class="member__content px-6 xl:px-0 max-w-7xl flex flex-col items-center">
         <div class="member__item flex flex-col max-w-3xl mb-[88px]">
           <h2 class="text-gold text-center uppercase text-2xl lg:text-[40px] mb-4">Become a member</h2>
           <p class="text-center text-white text-sm lg:text-base">After the first drop, we have prepared several
@@ -286,7 +294,7 @@
               <span class="uppercase text-white">silver</span>
             </div>
           </div>
-          <div class="member__status h-fit border-gold-gradient mb-4 lg:mb-0 py-5 px-3 lg:p-14 max-w-[500px]">
+          <div class="member__status btn-gold h-fit border-gold-gradient mb-4 lg:mb-0 py-5 px-3 lg:p-14 max-w-[500px]">
             <div
               class="member__title flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start mb-4">
               <img src="./src/images/svg/plat.svg" alt="" class="max-w-[60px] lg:max-w-[auto]">
@@ -302,18 +310,22 @@
                 supply
                 of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
             </div>
-            <a class=" w-fit" href="/light-paper">
-              <div class="seaside__btn w-max px-5 py-2.5">
-                <span class="uppercase gold">coming soon</span>
+            <a href="" class="w-fit">
+              <div class="flex items-center gap-3 px-5 py-3.5">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p class="gold uppercase">coming soon</p>
               </div>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="founder px-6 lg:px-0 max-w-7xl flex flex-col lg:flex-row mb-12">
+    <div class="founder px-6 xl:px-0 max-w-7xl flex flex-col lg:flex-row mb-12">
       <img src="./src/images/png/img-3.png" class="max-w-[100%] h-full lg:h-auto" alt="">
-      <div class="founder__text lg:ml-40">
+      <div class="founder__text lg:ml-6 xl:ml-40">
         <h2 class="text-gold uppercase text-[40px] mb-4">Hussein Karaki</h2>
         <p class="text-white mb-4">Founder</p>
         <p class="text-white mb-4 flex">“I aim to be a better person every day spiritually and physically. A wise man
@@ -328,8 +340,8 @@
           and strong community we can be heard all around the globe.”</p>
       </div>
     </div>
-    <div class="meet px-6 lg:px-0 flex justify-between items-center mb-15 lg:mb-32 btn-gold">
-      <img class="hidden lg:block relative lg:left-0" src="/src/images/png/line1.png" alt="">
+    <div class="meet px-6 xl:px-0 flex justify-center xl:justify-between items-center mb-15 lg:mb-32 btn-gold">
+      <img class="hidden xl:block relative lg:left-0" src="/src/images/png/line1.png" alt="">
       <div class="flex flex-col items-center">
         <h2 class="text-gold mb-4 text-center uppercase text-[40px]">meet the team!</h2>
         <p class="text-white text-center mb-6">Meet the team of professionals that is responsible to make
@@ -345,11 +357,11 @@
           </div>
         </a>
       </div>
-      <img class="hidden lg:block relative lg:right-0" src="/src/images/png/line2.png" alt="">
+      <img class="hidden xl:block relative lg:right-0" src="/src/images/png/line2.png" alt="">
     </div>
     <div class="same-bg">
-      <div class="faq px-6 lg:px-0 text-white flex flex-col lg:flex-row justify-around max-w-screen-2xl pb-6 lg:pb-32">
-        <div class="flex items-center justify-center">
+      <div class="faq px-6 xl:px-0 text-white flex flex-col lg:flex-row justify-around max-w-screen-2xl pb-6 lg:pb-32">
+        <div class="flex items-start justify-center">
           <img src="./src/images/png/img-4.png" alt="">
         </div>
         <div class="faqs lg:ml-4 grow">
@@ -358,11 +370,11 @@
             <details class="relative">
               <summary class="py-4 text-[20px] relative">
                 What is an NFT ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
               </summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">NFT stands for 'non-fungible token'.
+              <p class="py-4 max-w-[938px]">NFT stands for 'non-fungible token'.
                 A NFT is basically data that is accounted for in a digital ledger, and that data represents something
                 specific and unique.
                 A NFT can, for example, represent a unique piece of art or a game token. </p>
@@ -373,11 +385,11 @@
             <details class="relative">
               <summary class="py-4 text-[20px] relative">
                 How Can I get an NFT ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
               </summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">It will be available for purchase on our website through an initial sale.
+              <p class="py-4 max-w-[938px]">It will be available for purchase on our website through an initial sale.
                 At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your
                 wallet. </p>
             </details>
@@ -385,42 +397,47 @@
           </div>
           <div class="faq__detail">
             <details class="relative">
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <summary class="py-4 text-[20px] relative">What is the total supply ? </summary>
-              <p class="py-4">The supply will be 10 000 NFTs. </p>
+              <summary class="py-4 text-[20px] relative">
+                What is the total supply ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
+              </summary>
+              <p class="py-4 max-w-[938px]">The supply will be 10 000 NFTs. </p>
             </details>
             <hr class="bg-gold w-full">
           </div>
           <div class="faq__detail">
             <details class="relative">
-              <summary class="py-4 text-[20px] relative">What Blockchain is the project hosted now? </summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">Prime Ape Planet is on the Ethereum Blockchain. </p>
+              <summary class="py-4 text-[20px] relative">What Blockchain is the project hosted now?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
+              </summary>
+              <p class="py-4 max-w-[938px]">Prime Ape Planet is on the Ethereum Blockchain. </p>
             </details>
             <hr class="bg-gold w-full">
           </div>
           <div class="faq__detail">
             <details class="relative">
               <summary class="py-4 text-[20px] relative">How much does it cost<br class="lg:hidden" /> to mint an NFT ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
               </summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">Mint price is 0.25 ETH + Gas</p>
+              <p class="py-4 max-w-[938px]">Mint price is 0.25 ETH + Gas</p>
             </details>
             <hr class="bg-gold w-full">
           </div>
           <div class="faq__detail">
             <details class="relative">
-              <summary class="py-4 text-[20px] relative">How to purchase one ? </summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">The easiest way is to install a MetaMask extension in your Chrome browser and link your
+              <summary class="py-4 text-[20px] relative">How to purchase one ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
+              </summary>
+              <p class="py-4 max-w-[938px]">The easiest way is to install a MetaMask extension in your Chrome browser
+                and link your
                 Ethereum wallet
                 to
                 it.
@@ -433,11 +450,12 @@
           </div>
           <div class="faq__detail">
             <details class="relative">
-              <summary class="py-4 text-[20px] relative">What is an NFT ?</summary>
-              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-                <img src="./src/images/minus.svg" alt="">
-              </div>
-              <p class="py-4">NFT stands for 'non-fungible token'.
+              <summary class="py-4 text-[20px] relative">What is an NFT ?
+                <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                  <div class="control w-8 h-8"></div>
+                </div>
+              </summary>
+              <p class="py-4 max-w-[938px]">NFT stands for 'non-fungible token'.
                 A NFT is basically data that is accounted for in a digital ledger, and that data represents something
                 specific and unique.
                 A NFT can, for example, represent a unique piece of art or a game token. </p>
@@ -446,16 +464,26 @@
           </div>
         </div>
       </div>
-      <div class="part border rounded-2xl flex flex-col items-center px-6 lg:px-0 pt-6 lg:pt-12 lg:pb-32">
+      <div class="part border rounded-2xl flex flex-col items-center px-6 xl:px-0 pt-6 lg:pt-12 lg:pb-32">
         <h2 class="text-white text-center lg:text-left text-2xl lg:text-5xl mb-2">BE PART TO OUR COMMUNITY</h2>
         <h3 class="text-gold text-2xl lg:text-5xl mb-2">JOIN OUR DISCORD</h3>
         <p class="text-white mb-6 lg:mb-10 text-center lg:text-left">Find all the answer of your queﬆions on our DISCORD
         </p>
-        <img class="mb-15" src="./src/images/png/discord-panel.png" alt="">
+        <div class="btn-gold">
+          <a href="" class="w-fit">
+            <div class="flex items-center gap-3 py-4 px-32 rounded-2xl border-transparent">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <img class="mb-15" src="src/images/svg/discord-img.svg" alt="">
+            </div>
+          </a>
+        </div>
       </div>
       <hr class="bg-gold w-full mb-16">
     </div>
-    <div class="footer grid lg:grid-cols-3 items-center px-6 lg:px-0 mb-6">
+    <div class="footer grid lg:grid-cols-3 items-center px-6 xl:px-0 mb-6">
       <ul class="hidden lg:flex flex-col links">
         <li class="text-white text-2xl lg:text-base mb-7"><a href="">About us</a></li>
         <li class="text-white text-2xl lg:text-base mb-7"><a href="">Membership</a></li>
@@ -483,6 +511,18 @@
       </div>
     </div>
     <p class="text-white text-center pb-7">©2022 Seaside investment club. All rights reserved</p>
+    <div class="fixed fixed--bottom cookie-disclaimer js-cookie-disclaimer">
+      <div class="media media--center">
+        <div class="media-object media-object--right">
+          <button class="button gold">AGREE</button>
+        </div>
+        <div class="media-body">
+          <p>This website uses cookies to improve user experience. By clicking agree you consent to all cookies in
+            accordance with our <a href="#">Cookie Policy.</a>.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script type="module" src="/main.js">
   </script>

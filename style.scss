@@ -7,7 +7,7 @@ html, body {
   background: #000;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 64px;
+  padding-bottom: 1000px;
 }
 
 .gold {
@@ -64,6 +64,7 @@ html, body {
 .header {
   position: relative;
   z-index: 1;
+  transition: 0.3s;
 
   &__logo {
     span {
@@ -99,7 +100,7 @@ html, body {
 
 .apex {
   background: rgb(34,99,164);
-  background: radial-gradient(circle at 98% 40%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 18%);
+  background: radial-gradient(circle at 74% 48%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 40%);
   &__content {
     
   }
@@ -178,7 +179,7 @@ html, body {
   margin: 0 auto;
 
   background: rgb(34,99,164);
-  background: radial-gradient(circle at 98% 30%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 28%);
+  background: radial-gradient(circle at 8% 39%, rgba(34, 99, 164, 0.3) 0%, rgb(0, 0, 0) 50%);
 
   &__status {
     transition: 1s;
@@ -189,6 +190,8 @@ html, body {
       linear-gradient(120deg, #FFC149 0%, #FFFEA1 33%, #B48900 100%) border-box;
   }
 }
+
+
 
 .founder {
   margin: 0 auto;
@@ -206,6 +209,14 @@ html, body {
 
   details[open] summary ~ * {
     animation: sweep .3s ease-in-out;
+  }
+
+  details .control {
+    background: url('./src/images/plus.svg') no-repeat center center;
+  }
+
+  details[open] .control {
+    background: url('./src/images/minus.svg') no-repeat center center;
   }
   
   @keyframes sweep {
@@ -257,17 +268,17 @@ html, body {
 
   .apex {
     background: rgb(34,99,164);
-  background: radial-gradient(circle at 50% 20%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 58%);
+  background: radial-gradient(circle at 74% 48%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 40%);
   }
 
   .roadmap {
     background: rgb(34,99,164);
-    background: radial-gradient(circle at 50% 50%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 120%);
+    background: radial-gradient(circle at 50% 60%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 100%);
   }
 
   .radial-bg {
     background: rgb(34,99,164);
-    background: radial-gradient(circle at 10% 50%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 90%);
+    background: radial-gradient(circle at 10% 75%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 50%);
   }
 
   .steps {
@@ -293,6 +304,43 @@ html, body {
   .member {
     .seaside__btn {
       margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .steps {
+
+    &__grid {
+      grid-row-gap: 55px;
+    }
+
+    &__item:first-child {
+      grid-column-start: 3;
+      grid-column-end: 8;
+    }
+  
+    &__item:nth-child(2) {
+      grid-column-start: 10;
+      grid-column-end: 15;
+    }
+  
+    &__item:nth-child(3) {
+      grid-column-start: 17;
+      grid-column-end: 24;
+    }
+  
+    &__item:nth-child(4) {
+      grid-column-start: 6;
+      grid-column-end: 12;
+      grid-row: 2;
+      margin-left: 20px;
+    }
+  
+    &__item:nth-child(5) {
+      grid-column-start: 14;
+      grid-column-end: 24;
+      grid-row: 2;
     }
   }
 }
@@ -398,4 +446,120 @@ html, body {
   50%,100% {
     bottom: 100%;
   }
+}
+
+
+.fixed {
+  position: fixed;
+  will-change: transform;
+}
+
+.fixed--bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.cookie-disclaimer button {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.cookie-disclaimer .button {
+  border-style: solid;
+  border-width: 0.0625em;
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.button::after {
+  background-color: inherit;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  z-index: -1;
+}
+
+.button:focus::after,
+.button:hover::after {
+  opacity: 1;
+}
+
+/* modules/cookie-disclaimer.css */
+
+.cookie-disclaimer {
+  background-color: rgba(0,0,0,0.5);
+  color: #d4af37;
+  font-size: inherit;
+  font-size: 0.75rem;
+  opacity: 0;
+  padding: 12px;
+  padding: 0.75rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.cookie-disclaimer.is-active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.cookie-disclaimer :first-child {
+  margin-top: 0;
+}
+
+.cookie-disclaimer :last-child {
+  margin-bottom: 0;
+}
+
+/* modules/media.css */
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-object--left {
+  margin-right: 1em;
+}
+
+.media-object--right {
+  margin-left: 1em;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.media-body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }

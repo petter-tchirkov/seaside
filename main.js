@@ -41,6 +41,24 @@ document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".popup").classList.add("hidden");
 });
 
+document.querySelector("body").addEventListener("click", (event) => {
+  if (event.target.matches(".popup__content")) return;
+  document.querySelector(".popup").classList.add("hidden");
+});
+
 setTimeout(() => {
   document.querySelector(".popup").classList.remove("hidden");
-}, 300000);
+}, 1000);
+
+var $$cookieDisclaimer = document.querySelector(".js-cookie-disclaimer");
+
+if (!localStorage.getItem("cookieDisclaimer")) {
+  $$cookieDisclaimer.classList.add("is-active");
+}
+
+$$cookieDisclaimer
+  .querySelector("button")
+  .addEventListener("click", function () {
+    localStorage.setItem("cookieDisclaimer", true);
+    $$cookieDisclaimer.classList.remove("is-active");
+  });
