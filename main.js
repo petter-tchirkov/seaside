@@ -8,7 +8,7 @@ discordBtn.forEach((btn) => {
     btn.querySelector("img").src = "src/images/svg/discord.svg";
   });
   btn.addEventListener("mouseout", (e) => {
-    btn.querySelector("img").src = "src/images/svg/discord-gradient.svg";
+    btn.querySelector("img").src = "src/images/icon/ds-gradient.svg";
   });
 });
 
