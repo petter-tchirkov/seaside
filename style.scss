@@ -8,7 +8,146 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1000px;
+  transition: 1s;
+
+  .w-7 {
+    span:first-child {
+      transform: rotate(45deg) translate(50%, -50%);
+    }
+
+    span:last-child {
+      transform: rotate(-45deg) translate(47%, 50%);
+    }
+
+
+    span:nth-child(2) {
+      transform: translateX(-50%);
+      background: transparent;
+      border: none;
+    }
+  }
 }
+
+.hover-gold {
+  p {
+    background: linear-gradient(120.43deg, #FFC149 25.88%, #FFFEA1 41.78%, #B48900 68.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  a:hover p {
+    background: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #D4AF37;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px
+  }
+
+  a:hover {
+    background: #D4AF37;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #D4AF37,
+                0 0 25px #D4AF37,
+                0 0 50px #D4AF37,
+                0 0 100px #D4AF37;
+  }
+
+  a span {
+    position: absolute;
+    display: block;
+  }
+
+  a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D4AF37);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #D4AF37);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+  a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #D4AF37);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #D4AF37);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
 
 .gold {
   background: linear-gradient(120.43deg, #FFC149 25.88%, #FFFEA1 41.78%, #B48900 68.28%);
@@ -53,11 +192,27 @@ html, body {
 }
 
 .border-gold-gradient-whole {
+  position: relative;
   border: 2px solid transparent;
   border-radius: 20px;
-  background: 
-    linear-gradient(#000, #000) padding-box,
-    linear-gradient(-120deg, #FFC149 0%, #B48900 135%) border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    border-radius: inherit;
+    border-color: transparent;
+    background: 
+      linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) padding-box,
+      linear-gradient(-120deg, #FFC149 0%, #B48900 135%) border-box;
+    mask: linear-gradient(#fff, #fff) padding-box,
+          linear-gradient(#fff, #fff);
+    mask-composite: exclude;
+  }
 }
 
 
@@ -71,6 +226,54 @@ html, body {
       font-family: 'TrajanPro-Regular';
     }
   }
+
+  &__menu {
+    ul li a {
+      transition: 1s;
+    }
+
+    ul li a:hover {
+      background: linear-gradient(120.43deg, #FFC149 25.88%, #FFFEA1 41.78%, #B48900 68.28%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+.scroll {
+  color: #8E7212;
+  transform: rotate(-90deg);
+  letter-spacing: 0.14em;
+  font-size: 14px;
+  line-height: 100%;
+  transform: rotate(-50%,-50%);
+  cursor: pointer;
+
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+.vertical {
+  height: 100%;
+  width: 3px;
+  border: 1.5px solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #BC9B49 30%, rgba(255, 255, 255, 0) 150%);
+  border-image-slice: 1;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+  border: 1px solid;
+  border-left: 0;
+  border-right: 0;
+  border-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #BC9B49 30%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
 }
 
 .discord {
@@ -204,12 +407,37 @@ html, body {
   background-repeat: no-repeat;
 }
 
+@keyframes invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.faq details[open] p {
+  animation-name: invisiblyGrowFontSize, fadeIn;
+  animation-duration: 500ms, 200ms;
+  animation-delay: 0ms, 500ms;
+}
+
+
 .faq {
   margin: 0 auto;
 
-  details[open] summary ~ * {
-    animation: sweep .3s ease-in-out;
-  }
+  // details[open] summary ~ * {
+  //   animation: open 1s ease-in-out;
+  // }
 
   details .control {
     background: url('./src/images/plus.svg') no-repeat center center;
@@ -256,6 +484,18 @@ html, body {
 
   p.logo {
     font-family: 'TrajanPro-Regular';
+  }
+
+  ul li a {
+    transition: 1s;
+  }
+  
+  ul li a:hover {
+    background: linear-gradient(120.43deg, #FFC149 25.88%, #FFFEA1 41.78%, #B48900 68.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }
 
@@ -345,11 +585,14 @@ html, body {
   }
 }
 
+.ungold {
+  background: none;
+}
+
 
 .discord a,.btn-gold a {
   position: relative;
   display: inline-block;
-  color: #d4af37;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -360,12 +603,13 @@ html, body {
 
 .discord a:hover,.btn-gold a:hover {
   background: #d4af37;
-  color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #d4af37,
               0 0 25px #d4af37,
               0 0 50px #d4af37,
               0 0 100px #d4af37;
+  
+  
 }
 
 .discord a span,.btn-gold a span {

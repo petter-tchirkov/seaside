@@ -1,21 +1,33 @@
 import "./style.scss";
 import "./src/index.css";
 
-const discordBtn = document.querySelectorAll(".discord__frame");
-const discordIcon = document.querySelector(".discord__frame img");
-const joinText = document.querySelector(".discord__frame p");
+const discordBtn = document.querySelectorAll(".discord a");
 
 discordBtn.forEach((btn) => {
-  btn.addEventListener("mouseover", () => {
-    discordIcon.src = "src/images/svg/discord.svg";
-    joinText.classList.remove("gold");
-    joinText.classList.add("text-black");
+  btn.addEventListener("mouseover", (e) => {
+    btn.querySelector("img").src = "src/images/svg/discord.svg";
   });
-  btn.addEventListener("mouseout", () => {
-    discordIcon.src = "src/images/svg/discord-gradient.svg";
-    joinText.classList.add("gold");
-    joinText.classList.remove("text-black");
+  btn.addEventListener("mouseout", (e) => {
+    btn.querySelector("img").src = "src/images/svg/discord-gradient.svg";
   });
+});
+
+const socials = document.querySelectorAll(".socials li a img");
+const data = soc.getAttribute("data-social");
+
+socials.forEach((social) => {
+  social.addEventListener("mouseover", (e) => {
+    console.log("hello");
+    social.src = `src/images/icon/${data}-gradient.svg`;
+  });
+  social.addEventListener("mouseout", (e) => {
+    social.src = `src/images/icon/${data}.svg`;
+  });
+});
+
+document.querySelector(".scroll").addEventListener("click", () => {
+  window.scrollTo(0, 1200);
+  console.log("hello");
 });
 
 const toggleButton = document.querySelector(".header__burger");
@@ -48,7 +60,7 @@ document.querySelector("body").addEventListener("click", (event) => {
 
 setTimeout(() => {
   document.querySelector(".popup").classList.remove("hidden");
-}, 1000);
+}, 300000);
 
 var $$cookieDisclaimer = document.querySelector(".js-cookie-disclaimer");
 
