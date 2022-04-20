@@ -16,6 +16,7 @@
     "vite-plugin-multipage": "^1.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "vite-plugin-solid": "^2.2.6"
   }
 }

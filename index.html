@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seaside</title>
 </head>
 
 <body>
   <div class="bg-black">
-    <div class="scroll p-4 absolute top-[920px] left-[50%] z-50 hidden xl:flex flex-row-reverse items-center">
+    <div class="scroll p-4 absolute top-[920px] left-[47%] z-50 hidden xl:flex flex-row-reverse items-center">
       <img src="/src/images/scroll.svg" alt="">
       <span class="uppercase">scroll</span>
     </div>
@@ -66,7 +67,7 @@
             <span class="text-dark-gold w-28 leading-4">Seaside investment club</span>
           </div>
           <div
-            class="header__menu  hidden lg:flex lg:bg-transparent flex flex-col justify-between lg:flex-row lg:items-center">
+            class="header__menu hidden lg:flex lg:bg-transparent flex flex-col justify-between lg:flex-row lg:items-center">
             <ul class="flex gap-3.5 lg:gap-8 flex-col lg:flex-row">
               <li class="text-white text-2xl lg:text-base"><a href="">Home</a></li>
               <li class="text-white text-2xl lg:text-base"><a href="">About us</a></li>
@@ -77,7 +78,7 @@
             <ul class="lg:hidden flex justify-around items-center mt-9 mb-16">
               <li><a href="/"><img src="src/images/svg/facebook-gradient.svg" alt=""></a></li>
               <li><a href="/"><img src="src/images/svg/instagram-gradient.svg" alt=""></a></li>
-              <li><a href="/"><img src="src/images/svg/discord-gradient.svg" alt=""></a></li>
+              <li><a href="/"><img src="src/images/icon/ds-gradient.svg" alt=""></a></li>
               <li><a href="/"><img src="src/images/svg/ship-gradient.svg" alt=""></a></li>
             </ul>
             <ul class="lg:hidden grid grid-cols-2">
@@ -137,12 +138,12 @@
         </div>
       </div>
     </div>
-    <div class="mint h-36 flex items-center justify-center relative overflow-hidden mb-14 lg:mb-32">
+    <div class="mint h-36 flex items-center justify-center relative overflow-hidden">
       <img class="absolute -left-[17rem] md:-left-[33rem] xl:-left-60" src="src/images/png/figure-wave-1.png" alt="">
       <h2 class="gold uppercase text-2xl lg:text-5xl">mint date: tba</h2>
       <img class="absolute -right-[17rem] md:-right-[33rem] xl:-right-60" src="src/images/png/figure-wave-2.png" alt="">
     </div>
-    <div class="px-6 xl:px-0 apex mb-32 xl:mb-[450px] flex justify-center">
+    <div class="pt-14 lg:pt-32 px-6 xl:px-0 apex pb-32 xl:pb-[450px] flex justify-center">
       <div class="apex__content flex flex-col lg:flex-row items-center gap-2 lg:gap-32">
         <img class="bg-black max-w-[204px] lg:max-w-max" src="src/images/img-1.jpg" alt="">
         <div class="apex__text max-w-[700px]">
@@ -229,7 +230,7 @@
     <div class="steps flex justify-center lg:justify-end relative mb-32 radial-bg">
       <img class="hidden lg:block absolute w-max" src="./src/images/png/figure.png" alt="">
       <div class="steps__grid">
-        <div class="steps__item max-w-[330px] col-start-5 ml-4">
+        <div data-aos="fade-right" data-aos-delay="0" class="steps__item max-w-[330px] col-start-5 ml-4">
           <img src="./src/images/png/road-map-1.png" alt="" class="lg:hidden py-8 odd">
           <h4 class="text-gold mb-4 text-center lg:text-left">Community Contests</h4>
           <p class="text-white text-center lg:text-left">During the first phase there will be several giveaways and
@@ -240,14 +241,14 @@
             be our biggest beneficiaries!</p>
           </p>
         </div>
-        <div class="steps__item max-w-[330px]">
+        <div data-aos="fade-right" data-aos-delay="600" class="steps__item max-w-[330px]">
           <img src="./src/images/png/road-map-2.png" alt="" class="lg:hidden py-8">
           <h4 class="text-gold mb-4 text-center lg:text-left">Release of APEX HUMANITYs</h4>
           <p class="text-white text-center lg:text-left">Release and open minting for the first ever NFT collection from
             Seaside Investment club.
           </p>
         </div>
-        <div class="steps__item max-w-[330px]">
+        <div data-aos="fade-right" data-aos-delay="600" class="steps__item max-w-[330px]">
           <img src="./src/images/png/road-map-3.png" alt="" class="lg:hidden py-8">
           <h4 class="text-gold mb-4 text-center lg:text-left">Phase II & Membership Announcement</h4>
           <p class="text-white text-center lg:text-left">At this point we will announce the detailed view on membership
@@ -255,14 +256,14 @@
             along with the detailed information regaarding the Restaurant Chain, Ore Mining and Play2Earn(?) investment
             opportunities.</p>
         </div>
-        <div class="steps__item max-w-[330px]">
+        <div data-aos="fade-right" data-aos-delay="600" class="steps__item max-w-[330px]">
           <img src="./src/images/png/road-map-2.png" alt="" class="lg:hidden py-8">
           <h4 class="text-gold mb-4 text-center lg:text-left">CSR Program Reveal</h4>
           <p class="text-white text-center lg:text-left">We want to make a difference through our corporate social
             responsibility program,
             details of which will be disclosed down the road.</p>
         </div>
-        <div class="steps__item max-w-[330px] ml-4 xl:ml-0 lg:pt-12 xl:pt-0">
+        <div data-aos="fade-right" data-aos-delay="600" class="steps__item max-w-[330px] ml-4 xl:ml-0 lg:pt-12 xl:pt-0">
           <img src="./src/images/png/road-map-4.png" alt="" class="lg:hidden py-8 odd-reverse">
           <h4 class="text-gold mb-4 text-center lg:text-left">Reveal Event & giveaway results</h4>
           <p class="text-white text-center lg:text-left">The Giveaway results will be published during the Revelation
@@ -271,7 +272,7 @@
         </div>
       </div>
     </div>
-    <div class="member mb-12 lg:mb-32 flex justify-center">
+    <div class="member pb-12 lg:pb-32 flex justify-center">
       <div class="member__content px-6 xl:px-0 max-w-7xl flex flex-col items-center">
         <div class="member__item flex flex-col max-w-3xl mb-[88px]">
           <h2 class="text-gold text-center uppercase text-2xl lg:text-[40px] mb-4">Become a member</h2>
@@ -299,7 +300,7 @@
               <span class="uppercase text-white">silver</span>
             </div>
           </div>
-          <div class="vertical ml-14 mr-28"></div>
+          <div class="vertical mx-14 xl:ml-14 xl:mr-28"></div>
           <div
             class="member__status hover-gold flex flex-col items-center lg:items-start h-fit border-gold-gradient mb-4 lg:mb-0 py-5 px-3 lg:p-14 max-w-[500px]">
             <div
@@ -477,14 +478,14 @@
         <h3 class="text-gold text-2xl lg:text-5xl mb-2">JOIN OUR DISCORD</h3>
         <p class="text-white mb-6 lg:mb-10 text-center lg:text-left">Find all the answer of your queﬆions on our DISCORD
         </p>
-        <div class="btn-gold">
+        <div class="hover-gold">
           <a href="" class="w-fit">
-            <div class="flex discord__frame items-center gap-3 py-4 px-32 rounded-2xl border-transparent">
+            <div class="flex discord__frame items-center gap-3 py-4 px-20 lg:px-32 rounded-2xl border-transparent">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              <img class="mb-15" src="src/images/svg/discord-img.svg" alt="">
+              <img class="mb-15 max-w-[116px]" src="src/images/svg/discord-img.svg" alt="">
             </div>
           </a>
         </div>
@@ -532,6 +533,10 @@
     </div>
 
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script type="module" src="/main.js">
   </script>
 </body>

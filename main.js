@@ -13,9 +13,9 @@ discordBtn.forEach((btn) => {
 });
 
 const socials = document.querySelectorAll(".socials li a img");
-const data = soc.getAttribute("data-social");
 
 socials.forEach((social) => {
+  const data = social.getAttribute("data-social");
   social.addEventListener("mouseover", (e) => {
     console.log("hello");
     social.src = `src/images/icon/${data}-gradient.svg`;
