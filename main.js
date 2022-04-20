@@ -32,6 +32,8 @@ document.addEventListener("scroll", () => {
     header.classList.add("bg-black", "z-50");
     header.classList.remove("pb-16");
     document.querySelector(".header__content").classList.remove("pb-16");
+  } else if (window.scrollY === 0) {
+    header.classList.remove("bg-black", "z-50");
   }
 });
 
@@ -41,4 +43,4 @@ document.querySelector(".close").addEventListener("click", () => {
 
 setTimeout(() => {
   document.querySelector(".popup").classList.remove("hidden");
-}, 30000);
+}, 300000);

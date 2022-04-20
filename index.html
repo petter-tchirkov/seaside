@@ -48,9 +48,9 @@
       <video autoplay muted loop id="myVideo">
         <source src="/src/video.mp4" type="video/mp4">
       </video>
-      <div class="header pb-16 lg:pb-0 md:px-8 px-6 2xl:px-60 fixed w-full">
+      <div class="header md:border-b border-b-gold pb-16 lg:pb-0 md:px-8 px-6 2xl:px-60 fixed w-full">
         <div
-          class="header__content relative md:border-b border-b-gold pt-4 pb-16 lg:pb-6 xl:pl-24 xl:pr-16 flex flex-col lg:flex-row items-center justify-between gap-y-6 lg:gap-y-0">
+          class="header__content relative pt-4 pb-16 lg:pb-6 xl:pl-24 xl:pr-16 flex flex-col lg:flex-row lg:items-center justify-between gap-y-6 lg:gap-y-0">
           <div class="header__logo pb-4 lg:pb-0 flex gap-2.5">
             <img class="w-5 h-12" src="src/images/logo.png" alt="logo" />
             <span class="text-dark-gold w-28 leading-4">Seaside investment club</span>
@@ -132,8 +132,8 @@
       <h2 class="gold uppercase text-2xl lg:text-5xl">mint date: tba</h2>
       <img class="absolute -right-[17rem] md:-right-[33rem] lg:-right-60" src="src/images/png/figure-wave-2.png" alt="">
     </div>
-    <div class="px-6 lg:px-0 apex mb-32 lg:mb-[450px] lg:grid grid-cols-24">
-      <div class="apex__content col-start-8 col-end-24 flex flex-col lg:flex-row items-center gap-2 lg:gap-32">
+    <div class="px-6 lg:px-0 apex mb-32 lg:mb-[450px] flex justify-center">
+      <div class="apex__content flex flex-col lg:flex-row items-center gap-2 lg:gap-32">
         <img class="bg-black max-w-[204px] lg:max-w-max" src="src/images/img-1.jpg" alt="">
         <div class="apex__text max-w-[700px]">
           <h2 class="text-gold uppercase text-2xl lg:text-[40px] text-center lg:text-left">Apex Humanity</h2>
@@ -168,8 +168,8 @@
         </div>
       </div>
     </div>
-    <div class="px-6 lg:px-0 paper lg:grid mb-20 relative overflow-hidden˚">
-      <div class="paper__content flex col-start-5 col-end-16 gap-5">
+    <div class="px-6 lg:px-0 paper flex justify-center mb-20 relative overflow-hidden˚">
+      <div class="paper__content flex gap-5">
         <div class="paper__video hidden lg:block">
           <iframe width="720" height="420" src="https://www.youtube.com/embed/DHfRfU3XUEo" title="YouTube video player"
             frameborder="0"
@@ -219,7 +219,7 @@
     <div class="steps flex justify-center lg:justify-end relative mb-32">
       <img class="hidden lg:block absolute w-max" src="./src/images/png/figure.png" alt="">
       <div class="steps__grid">
-        <div class="steps__item max-w-[330px] col-start-5">
+        <div class="steps__item max-w-[330px] col-start-5 ml-4">
           <img src="./src/images/png/road-map-1.png" alt="" class="lg:hidden py-8 odd">
           <h4 class="text-gold mb-4 text-center lg:text-left">Community Contests</h4>
           <p class="text-white text-center lg:text-left">During the first phase there will be several giveaways and
@@ -242,7 +242,7 @@
             along with the detailed information regaarding the Restaurant Chain, Ore Mining and Play2Earn(?) investment
             opportunities.</p>
         </div>
-        <div class="steps__item max-w-[330px]">
+        <div class="steps__item max-w-[330px] radial-bg">
           <img src="./src/images/png/road-map-2.png" alt="" class="lg:hidden py-8">
           <h4 class="text-gold mb-4 text-center lg:text-left">CSR Program Reveal</h4>
           <p class="text-white text-center lg:text-left">We want to make a difference through our corporate social
@@ -258,52 +258,56 @@
         </div>
       </div>
     </div>
-    <div class="member px-6 lg:px-0 mb-12 lg:mb-32 max-w-7xl flex flex-col items-center">
-      <div class="member__item flex flex-col max-w-3xl mb-[88px]">
-        <h2 class="text-gold text-center uppercase text-2xl lg:text-[40px] mb-4">Become a member</h2>
-        <p class="text-center text-white text-sm lg:text-base">After the first drop, we have prepared several
-          opportunities for you to become
-          a part of the Club. A membership NFT series with four different membership levels, generic design, limited
-          supply of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
-      </div>
-      <div class="flex flex-col-reverse lg:flex-row">
-        <div class="member__grid grid lg:grid-cols-2">
-          <div class="plat flex flex-col items-center pt-8">
-            <img class="mb-6" src="./src/images/png/plat.png" alt="">
-            <span class="uppercase text-white">platinum</span>
-          </div>
-          <div class="gold flex flex-col items-center pt-8 lg:pt-0">
-            <img class="mb-6" src="./src/images/png/gold.png" alt="">
-            <span class="uppercase text-white">gold</span>
-          </div>
-          <div class="bronze flex flex-col items-center pt-8">
-            <img class="mb-6" src="./src/images/png/bronze.png" alt="">
-            <span class="uppercase text-white">bronze</span>
-          </div>
-          <div class="silver flex flex-col items-center pt-8 lg:pt-0">
-            <img class="mb-6" src="./src/images/png/silver.png" alt="">
-            <span class="uppercase text-white">silver</span>
-          </div>
+    <div class="member mb-12 lg:mb-32 flex justify-center">
+      <div class="member__content px-6 lg:px-0 max-w-7xl flex flex-col items-center">
+        <div class="member__item flex flex-col max-w-3xl mb-[88px]">
+          <h2 class="text-gold text-center uppercase text-2xl lg:text-[40px] mb-4">Become a member</h2>
+          <p class="text-center text-white text-sm lg:text-base">After the first drop, we have prepared several
+            opportunities for you to become
+            a part of the Club. A membership NFT series with four different membership levels, generic design, limited
+            supply of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
         </div>
-        <div class="member__status h-fit border-gold-gradient mb-4 lg:mb-0 py-5 px-3 lg:p-14 max-w-[500px]">
-          <div
-            class="member__title flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start mb-4">
-            <img src="./src/images/svg/plat.svg" alt="" class="max-w-[60px] lg:max-w-[auto]">
-            <span class="hidden lg:block uppercase text-white text-[40px] ml-12">platinum member</span>
-            <p class="lg:hidden text-center upppercase text-gold text-2xl">platinum</p>
-            <span class="lg:hidden text-base uppercase text-white text-center">member</span>
-          </div>
-          <div class="member__text mb-8">
-            <p class="text-white text-center lg:text-left">After the first drop, we have prepared several opportunities
-              for you to become a part
-              of the Club. A membership NFT series with four different membership levels, generic design, limited supply
-              of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
-          </div>
-          <a class=" w-fit" href="/light-paper">
-            <div class="seaside__btn w-max px-5 py-2.5">
-              <span class="uppercase gold">coming soon</span>
+        <div class="flex flex-col-reverse lg:flex-row">
+          <div class="member__grid grid lg:grid-cols-2">
+            <div class="plat flex flex-col items-center pt-8">
+              <img class="mb-6" src="./src/images/png/plat.png" alt="">
+              <span class="uppercase text-white">platinum</span>
             </div>
-          </a>
+            <div class="gold flex flex-col items-center pt-8 lg:pt-0">
+              <img class="mb-6" src="./src/images/png/gold.png" alt="">
+              <span class="uppercase text-white">gold</span>
+            </div>
+            <div class="bronze flex flex-col items-center pt-8">
+              <img class="mb-6" src="./src/images/png/bronze.png" alt="">
+              <span class="uppercase text-white">bronze</span>
+            </div>
+            <div class="silver flex flex-col items-center pt-8 lg:pt-0">
+              <img class="mb-6" src="./src/images/png/silver.png" alt="">
+              <span class="uppercase text-white">silver</span>
+            </div>
+          </div>
+          <div class="member__status h-fit border-gold-gradient mb-4 lg:mb-0 py-5 px-3 lg:p-14 max-w-[500px]">
+            <div
+              class="member__title flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start mb-4">
+              <img src="./src/images/svg/plat.svg" alt="" class="max-w-[60px] lg:max-w-[auto]">
+              <span class="hidden lg:block uppercase text-white text-[40px] ml-12">platinum member</span>
+              <p class="lg:hidden text-center upppercase text-gold text-2xl">platinum</p>
+              <span class="lg:hidden text-base uppercase text-white text-center">member</span>
+            </div>
+            <div class="member__text mb-8">
+              <p class="text-white text-center lg:text-left">After the first drop, we have prepared several
+                opportunities
+                for you to become a part
+                of the Club. A membership NFT series with four different membership levels, generic design, limited
+                supply
+                of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
+            </div>
+            <a class=" w-fit" href="/light-paper">
+              <div class="seaside__btn w-max px-5 py-2.5">
+                <span class="uppercase gold">coming soon</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -324,123 +328,131 @@
           and strong community we can be heard all around the globe.”</p>
       </div>
     </div>
-    <div class="meet px-6 lg:px-0 flex flex-col items-center mb-15 lg:mb-32 btn-gold">
-      <h2 class="text-gold mb-4 text-center lg:text-left uppercase text-[40px]">meet the team!</h2>
-      <p class="text-white text-center lg:text-left mb-6">Meet the team of professionals that is responsible to make
-        every word you read here a
-        reality.</p>
-      <a href="" class="w-fit">
-        <div class="flex items-center gap-3 px-5 py-3.5">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <p class="gold uppercase">meet all team</p>
-        </div>
-      </a>
-    </div>
-    <div class="faq px-6 lg:px-0 text-white flex flex-col lg:flex-row max-w-screen-2xl mb-32">
-      <div class="flex items-center justify-center">
-        <img src="./src/images/png/img-4.png" alt="">
+    <div class="meet px-6 lg:px-0 flex justify-between items-center mb-15 lg:mb-32 btn-gold">
+      <img class="hidden lg:block relative lg:left-0" src="/src/images/png/line1.png" alt="">
+      <div class="flex flex-col items-center">
+        <h2 class="text-gold mb-4 text-center uppercase text-[40px]">meet the team!</h2>
+        <p class="text-white text-center mb-6">Meet the team of professionals that is responsible to make
+          every word you read here a
+          reality.</p>
+        <a href="" class="w-fit">
+          <div class="flex items-center gap-3 px-5 py-3.5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p class="gold uppercase">meet all team</p>
+          </div>
+        </a>
       </div>
-      <div class="faqs lg:ml-4">
-        <h2 class="text-2xl lg:text-[40px] mb-8 lg:mb-12">FAQ</h2>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">
-              What is an NFT ?
-            </summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">NFT stands for 'non-fungible token'.
-              A NFT is basically data that is accounted for in a digital ledger, and that data represents something
-              specific and unique.
-              A NFT can, for example, represent a unique piece of art or a game token. </p>
-          </details>
-          <hr class="bg-gold w-full">
+      <img class="hidden lg:block relative lg:right-0" src="/src/images/png/line2.png" alt="">
+    </div>
+    <div class="same-bg">
+      <div class="faq px-6 lg:px-0 text-white flex flex-col lg:flex-row justify-around max-w-screen-2xl pb-6 lg:pb-32">
+        <div class="flex items-center justify-center">
+          <img src="./src/images/png/img-4.png" alt="">
         </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">
-              How Can I get an NFT ?
-            </summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">It will be available for purchase on our website through an initial sale.
-              At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your
-              wallet. </p>
-          </details>
-          <hr class="bg-gold w-full">
-        </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <summary class="py-4 text-[20px] relative">What is the total supply ? </summary>
-            <p class="py-4">The supply will be 10 000 NFTs. </p>
-          </details>
-          <hr class="bg-gold w-full">
-        </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">What Blockchain is the project hosted now? </summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">Prime Ape Planet is on the Ethereum Blockchain. </p>
-          </details>
-          <hr class="bg-gold w-full">
-        </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">How much does it cost to mint an NFT ? </summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">Mint price is 0.25 ETH + Gas</p>
-          </details>
-          <hr class="bg-gold w-full">
-        </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">How to purchase one ? </summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">The easiest way is to install a MetaMask extension in your Chrome browser and link your
-              Ethereum wallet
-              to
-              it.
-              Ensure you have enough ETH in your wallet to cover the cost of a NFT plus the associated transaction (gas)
-              fees.
-              Approve the transaction on MetaMask and you are all set. </p>
-          </details>
-          <hr class="bg-gold w-full">
-        </div>
-        <div class="faq__detail border-b-gold">
-          <details class="relative">
-            <summary class="py-4 text-[20px] relative">What is an NFT ?</summary>
-            <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
-              <img src="./src/images/minus.svg" alt="">
-            </div>
-            <p class="py-4">NFT stands for 'non-fungible token'.
-              A NFT is basically data that is accounted for in a digital ledger, and that data represents something
-              specific and unique.
-              A NFT can, for example, represent a unique piece of art or a game token. </p>
-          </details>
-          <hr class="bg-gold w-full">
+        <div class="faqs lg:ml-4 grow">
+          <h2 class="text-2xl lg:text-[40px] mb-8 lg:mb-12">FAQ</h2>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">
+                What is an NFT ?
+              </summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">NFT stands for 'non-fungible token'.
+                A NFT is basically data that is accounted for in a digital ledger, and that data represents something
+                specific and unique.
+                A NFT can, for example, represent a unique piece of art or a game token. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">
+                How Can I get an NFT ?
+              </summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">It will be available for purchase on our website through an initial sale.
+                At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your
+                wallet. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <summary class="py-4 text-[20px] relative">What is the total supply ? </summary>
+              <p class="py-4">The supply will be 10 000 NFTs. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">What Blockchain is the project hosted now? </summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">Prime Ape Planet is on the Ethereum Blockchain. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">How much does it cost<br class="lg:hidden" /> to mint an NFT ?
+              </summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">Mint price is 0.25 ETH + Gas</p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">How to purchase one ? </summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">The easiest way is to install a MetaMask extension in your Chrome browser and link your
+                Ethereum wallet
+                to
+                it.
+                Ensure you have enough ETH in your wallet to cover the cost of a NFT plus the associated transaction
+                (gas)
+                fees.
+                Approve the transaction on MetaMask and you are all set. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
+          <div class="faq__detail">
+            <details class="relative">
+              <summary class="py-4 text-[20px] relative">What is an NFT ?</summary>
+              <div class="gold-bg absolute top-3 right-0 w-8 flex justify-center">
+                <img src="./src/images/minus.svg" alt="">
+              </div>
+              <p class="py-4">NFT stands for 'non-fungible token'.
+                A NFT is basically data that is accounted for in a digital ledger, and that data represents something
+                specific and unique.
+                A NFT can, for example, represent a unique piece of art or a game token. </p>
+            </details>
+            <hr class="bg-gold w-full">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="part flex flex-col items-center px-6 lg:px-0">
-      <h2 class="text-white text-center lg:text-left text-2xl lg:text-5xl mb-2">BE PART TO OUR COMMUNITY</h2>
-      <h3 class="text-gold text-2xl lg:text-5xl mb-2">JOIN OUR DISCORD</h3>
-      <p class="text-white mb-6 lg:mb-10 text-center lg:text-left">Find all the answer of your queﬆions on our DISCORD
-      </p>
-      <img class="mb-15 lg:mb-32" src="./src/images/png/discord-panel.png" alt="">
+      <div class="part border rounded-2xl flex flex-col items-center px-6 lg:px-0 pt-6 lg:pt-12 lg:pb-32">
+        <h2 class="text-white text-center lg:text-left text-2xl lg:text-5xl mb-2">BE PART TO OUR COMMUNITY</h2>
+        <h3 class="text-gold text-2xl lg:text-5xl mb-2">JOIN OUR DISCORD</h3>
+        <p class="text-white mb-6 lg:mb-10 text-center lg:text-left">Find all the answer of your queﬆions on our DISCORD
+        </p>
+        <img class="mb-15" src="./src/images/png/discord-panel.png" alt="">
+      </div>
       <hr class="bg-gold w-full mb-16">
     </div>
     <div class="footer grid lg:grid-cols-3 items-center px-6 lg:px-0 mb-6">

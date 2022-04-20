@@ -98,8 +98,15 @@ html, body {
 }
 
 .apex {
+  background: rgb(34,99,164);
+  background: radial-gradient(circle at 98% 40%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 18%);
   &__content {
     
+  }
+
+  img {
+    // filter: blur(3px);
+    border-radius: 32px;
   }
 
   &__text {
@@ -113,6 +120,9 @@ html, body {
 
 .paper {
   grid-template-columns: repeat(24, 1fr);
+
+  background: rgb(34,99,164);
+  background: radial-gradient(circle at 2% 40%, rgba(34,99,164,.2) 0%, rgba(0,0,0,1) 38%);
 
   &__content {
     grid-column-end: 22;
@@ -167,6 +177,9 @@ html, body {
 .member {
   margin: 0 auto;
 
+  background: rgb(34,99,164);
+  background: radial-gradient(circle at 98% 30%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 28%);
+
   &__status {
     transition: 1s;
     border: 2px solid transparent;
@@ -181,11 +194,32 @@ html, body {
   margin: 0 auto;
 }
 
+.same-bg {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle at 50% 90%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 78%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .faq {
   margin: 0 auto;
 
+  details[open] summary ~ * {
+    animation: sweep .3s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+  details {
+    border-bottom: 1px solid #FFC149;
+  }
+
   details > summary {
     list-style: none;
+    border: none;
   }
   details > summary::-webkit-details-marker {
     display: none;
@@ -219,6 +253,21 @@ html, body {
     background: 
     linear-gradient(#000, #000) padding-box,
     linear-gradient(120deg, #FFC149 0%, #000 30%, #000 55%, #B48900 135%) border-box;
+  }
+
+  .apex {
+    background: rgb(34,99,164);
+  background: radial-gradient(circle at 50% 20%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 58%);
+  }
+
+  .roadmap {
+    background: rgb(34,99,164);
+    background: radial-gradient(circle at 50% 50%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 120%);
+  }
+
+  .radial-bg {
+    background: rgb(34,99,164);
+    background: radial-gradient(circle at 10% 50%, rgba(34,99,164,.3) 0%, rgba(0,0,0,1) 90%);
   }
 
   .steps {
