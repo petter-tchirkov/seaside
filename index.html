@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seaside</title>
+</head>
+
+<body>
+  <div class="bg-black">
+    <div class="wrapper">
+      <div class="header h-screen w-full px-6 md:px-8 2xl:px-60">
+        <video autoplay muted loop id="myVideo">
+          <source src="/src/video.mp4" type="video/mp4">
+        </video>
+        <div
+          class="header__content relative md:border-b border-b-gold pt-4 lg:pb-6 xl:pl-24 xl:pr-16 flex flex-col lg:flex-row justify-between gap-y-6 lg:gap-y-0">
+          <div class="header__logo flex gap-2.5">
+            <img class="w-5 h-12" src="src/images/logo.png" alt="logo" />
+            <span class="text-dark-gold w-28 leading-4">Seaside investment club</span>
+          </div>
+          <div
+            class="header__menu  hidden lg:flex lg:bg-transparent flex flex-col justify-between lg:flex-row lg:items-center">
+            <ul class="flex gap-3.5 lg:gap-8 flex-col lg:flex-row">
+              <li class="text-white text-2xl lg:text-base"><a href="">Home</a></li>
+              <li class="text-white text-2xl lg:text-base"><a href="">About us</a></li>
+              <li class="text-white text-2xl lg:text-base"><a href="">Membership</a></li>
+              <li class="text-white text-2xl lg:text-base"><a href="">Roadmap</a></li>
+              <li class="text-white text-2xl lg:text-base"><a href="">Community</a></li>
+            </ul>
+            <ul class="lg:hidden flex justify-around items-center mt-9 mb-16">
+              <li><a href="/"><img src="src/images/svg/facebook-gradient.svg" alt=""></a></li>
+              <li><a href="/"><img src="src/images/svg/instagram-gradient.svg" alt=""></a></li>
+              <li><a href="/"><img src="src/images/svg/discord-gradient.svg" alt=""></a></li>
+              <li><a href="/"><img src="src/images/svg/ship-gradient.svg" alt=""></a></li>
+            </ul>
+            <ul class="lg:hidden grid grid-cols-2">
+              <li><a class="mb-6 uppercase text-gold text-sm" href="/">TERMS of service</a></li>
+              <li class="mb-6 justify-self-end"><a class="uppercase text-gold text-sm" href="/">OUR TEAM</a></li>
+              <li><a class="uppercase text-gold text-sm" href="/">SMART CONTRACT</a></li>
+              <li class="justify-self-end"><a class="uppercase text-gold text-sm" href="/">Privacy Policy</a></li>
+            </ul>
+            <div class="header__discord discord hidden lg:block ml-10 xl:ml-[130px]">
+              <a href="">
+                <div class="discord__frame flex items-center gap-3 px-5 py-3.5">
+                  <span class="gold">JOIN US</span>
+                  <img class="" src="src/images/svg/discord-gradient.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header__burger w-max absolute top-6 right-0 flex lg:hidden justify-end items-center">
+            <div class="w-7">
+              <span class="bar h-[4px] mb-1 block bg-gold"></span>
+              <span class="bar h-[4px] mb-1 block bg-gold"></span>
+              <span class="bar h-[4px] block bg-gold"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="app px-6 md:px-8 2xl:px-60 h-full absolute w-full bottom-0 left-0 flex flex-col justify-end lg:justify-center">
+        <div class="seaside w-full relative flex flex-col pb-8">
+          <div class="seaside__content max-w-[420px]">
+            <h1 class="seaside__title uppercase text-white text-2xl lg:text-[40px] leading-tight mb-4">
+              Seaside Investment Club
+            </h1>
+            <p class="seaside__text text-white mb-8">Utilizing Web 3.0 technologies we aim to build a strong community,
+              that
+              will provide
+              opportunities for personal independence and networking in the digital era.</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <a class=" w-fit" href="/light-paper">
+              <div class="seaside__btn w-max px-5 py-2.5">
+                <span class="uppercase gold">light paper</span>
+              </div>
+            </a>
+            <div class="flex">
+              <img class="max-w-[60px] lg:max-w-fit" src="src/images/svg/discord-img.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mint h-36 flex items-center justify-center relative overflow-hidden mb-14 lg:mb-32">
+      <img class="absolute -left-[17rem] lg:-left-60" src="src/images/png/figure-wave-1.png" alt="">
+      <h2 class="gold uppercase text-2xl lg:text-5xl">mint date: tba</h2>
+      <img class="absolute -right-[17rem] lg:-right-60" src="src/images/png/figure-wave-2.png" alt="">
+    </div>
+    <div class="apex mb-32 lg:mb-[450px] grid grid-cols-24">
+      <div class="apex__content col-start-8 col-end-24 flex flex-col lg:flex-row items-center gap-2 lg:gap-32">
+        <img class="bg-black" src="src/images/img-1.jpg" alt="">
+        <div class="apex__text max-w-[700px]">
+          <h2 class="text-gold uppercase text-[40px]">Apex Humanity</h2>
+          <p class="text-white mb-6">The individual is just as important as the community. Since we want to make a
+            strong
+            community - we want our
+            community members to be stronger. This concept lies deep in the roots of our first <span
+              class="gold italic">Apex
+              Humanity NFT collection</span></p>
+          <p class="text-white mb-12">The Apex Humanity collection will consist of <span class="gold italic">10 000
+              unique
+              NFTs</span> and will be
+            used as Club Membership access
+            tokens later. Of them, only the ten will provide a particular value different from the others via the Apex
+            Giveaway. Learn more about the future genesis drop in our Light Paper.</p>
+          <div class="apex__discord discord flex">
+            <a href="">
+              <div class="discord__frame flex items-center gap-3 px-5 py-3.5">
+                <span class="gold">JOIN US</span>
+                <img class="" src="src/images/svg/discord-gradient.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="paper grid mb-20 relative overflow-hidden˚">
+      <div class="paper__content flex col-start-5 col-end-16 gap-5">
+        <div class="paper__video">
+          <iframe width="720" height="420" src="https://www.youtube.com/embed/DHfRfU3XUEo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="paper__text border-gold-gradient max-w-[570px] pt-10 px-16 pb-5">
+          <h2 class="uppercase text-gold text-[40px]">light paper</h2>
+          <p class="text-white mb-6">We want to create a united community of people who want to make a difference in
+            this world, turning it into a
+            better place to live in for future generations. But since we are businessmen, the vague statement of our
+            desires is not enough.</p>
+          <p class="text-white mb-6">You may learn our values, vision, goals as well as the future benefits that will
+            be available for you in our
+            project Light Paper.</p>
+          <div class="flex justify-end">
+            <a class=" w-fit" href="/light-paper">
+              <div class="paper__btn w-max px-5 py-2.5">
+                <span class="uppercase gold">download</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img class="absolute -top-[120%] right-0 overflow-hidden" src="/src/images/png/img-2.png" alt="">
+    </div>
+    <div class="roadmap flex justify-center mb-20">
+      <div class="roadmap__item max-w-3xl">
+        <h2 class="text-gold text-center uppercase text-[40px] mb-4">roadmap</h2>
+        <h3 class="text-gold text-center uppercase text-2xl mb-4">phase 1</h3>
+        <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit
+          amet,
+          consectetur adipiscing elit tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation nisi ut aliquip ex ea commodo consequat. tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <div class="steps flex justify-end relative mb-32">
+      <img class="absolute w-max" src="./src/images/png/figure.png" alt="">
+      <div class="steps__grid grid">
+        <div class="steps__item max-w-[330px] col-start-5">
+          <h4 class="text-gold mb-4">Community Contests</h4>
+          <p class="text-white">During the first phase there will be several giveaways and contests held in our official
+            Discord server intended to benefit the most active and talented people. Be sure, our earliest members will
+            be our biggest beneficiaries!</p>
+        </div>
+        <div class="steps__item max-w-[330px]">
+          <h4 class="text-gold mb-4">Release of APEX HUMANITYs</h4>
+          <p class="text-white">Release and open minting for the first ever NFT collection from Seaside Investment club.
+          </p>
+        </div>
+        <div class="steps__item max-w-[330px]">
+          <h4 class="text-gold mb-4">Phase II & Membership Announcement</h4>
+          <p class="text-white">At this point we will announce the detailed view on membership tiers, perks for each
+            along with the detailed information regaarding the Restaurant Chain, Ore Mining and Play2Earn(?) investment
+            opportunities.</p>
+        </div>
+        <div class="steps__item max-w-[330px]">
+          <h4 class="text-gold mb-4">CSR Program Reveal</h4>
+          <p class="text-white">We want to make a difference through our corporate social responsibility program,
+            details of which will be disclosed down the road.</p>
+        </div>
+        <div class="steps__item max-w-[330px] pt-12">
+          <h4 class="text-gold mb-4">Reveal Event & giveaway results</h4>
+          <p class="text-white">The Giveaway results will be published during the Revelation Event as well as some hints
+            regarding our future goals and plans.</p>
+        </div>
+      </div>
+    </div>
+    <div class="member mb-32 max-w-7xl flex flex-col items-center">
+      <div class="member__item flex flex-col max-w-3xl mb-[88px]">
+        <h2 class="text-gold text-center uppercase text-[40px] mb-4">Become a member</h2>
+        <p class="text-center text-white">After the first drop, we have prepared several opportunities for you to become
+          a part of the Club. A membership NFT series with four different membership levels, generic design, limited
+          supply of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
+      </div>
+      <div class="flex">
+        <div class="member__grid grid grid-cols-2">
+          <div class="plat flex flex-col items-center pt-8">
+            <img class="mb-6" src="./src/images/png/plat.png" alt="">
+            <span class="uppercase text-white">platinum</span>
+          </div>
+          <div class="gold flex flex-col items-center">
+            <img class="mb-6" src="./src/images/png/gold.png" alt="">
+            <span class="uppercase text-white">gold</span>
+          </div>
+          <div class="bronze flex flex-col items-center pt-8">
+            <img class="mb-6" src="./src/images/png/bronze.png" alt="">
+            <span class="uppercase text-white">bronze</span>
+          </div>
+          <div class="silver flex flex-col items-center">
+            <img class="mb-6" src="./src/images/png/silver.png" alt="">
+            <span class="uppercase text-white">silver</span>
+          </div>
+        </div>
+        <div class="member__status h-fit border-gold-gradient p-14 max-w-[500px]">
+          <div class="member__title flex mb-4">
+            <img src="./src/images/svg/plat.svg" alt="">
+            <span class="uppercase text-white text-[40px] ml-12">platinum member</span>
+          </div>
+          <div class="member__text mb-8">
+            <p class="text-white">After the first drop, we have prepared several opportunities for you to become a part
+              of the Club. A membership NFT series with four different membership levels, generic design, limited supply
+              of the two highest tiers, and various perks and opportunities we provide to each Club member.</p>
+          </div>
+          <a class=" w-fit" href="/light-paper">
+            <div class="seaside__btn w-max px-5 py-2.5">
+              <span class="uppercase gold">coming soon</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="founder max-w-7xl flex mb-12">
+      <img src="./src/images/png/img-3.png" alt="">
+      <div class="founder__text ml-40">
+        <h2 class="text-gold uppercase text-[40px] mb-4">Hussein Karaki</h2>
+        <span class="text-white mb-4">Founder</span>
+        <span class="text-white mb-4 flex">“I aim to be a better person every day spiritually and physically. A wise man
+          once
+          said: Compare yourself to who you were yesterday. Apart from the days where my beautiful wife gave birth to
+          our children, I would say that my best and most fulfilling moments in life have been the ones were I was able
+          to help people in need. Or get them back on track if they have lost their way.</span>
+        <span class="text-white mb-4 flex">I am envisioning a better future for my children and their children. I am
+          fully
+          aware
+          that I alone won’t be able to change this world the way I would love to see it be some day. But with a smart
+          and strong community we can be heard all around the globe.”</span>
+      </div>
+    </div>
+    <div class="meet flex flex-col items-center mb-32">
+      <h2 class="text-gold mb-4 uppercase text-[40px]">meet the team!</h2>
+      <p class="text-white mb-6">Meet the team of professionals that is responsible to make every word you read here a
+        reality.</p>
+      <a class=" w-fit" href="/light-paper">
+        <div class="seaside__btn w-max px-5 py-2.5">
+          <span class="uppercase gold">coming soon</span>
+        </div>
+      </a>
+    </div>
+    <div class="faq text-white flex max-w-screen-2xl mb-32">
+      <img src="./src/images/png/img-4.png" alt="">
+      <div class="faqs ml-4">
+        <h2 class="text-[40px] mb-12">FAQ</h2>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">What is an NFT ?</summary>
+            <p class="py-4">NFT stands for 'non-fungible token'.
+              A NFT is basically data that is accounted for in a digital ledger, and that data represents something
+              specific and unique.
+              A NFT can, for example, represent a unique piece of art or a game token. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">How Can I get an NFT ? </summary>
+            <p class="py-4">It will be available for purchase on our website through an initial sale.
+              At the time of purchase, a randomly selected NFT will be minted on the blockchain and delivered to your
+              wallet. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">What is the total supply ? </summary>
+            <p class="py-4">The supply will be 10 000 NFTs. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">What Blockchain is the project hosted now? </summary>
+            <p class="py-4">Prime Ape Planet is on the Ethereum Blockchain. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">How much does it cost to mint an NFT ? </summary>
+            <p class="py-4">Mint price is 0.25 ETH + Gas</p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">How to purchase one ? </summary>
+            <p class="py-4">The easiest way is to install a MetaMask extension in your Chrome browser and link your
+              Ethereum wallet
+              to
+              it.
+              Ensure you have enough ETH in your wallet to cover the cost of a NFT plus the associated transaction (gas)
+              fees.
+              Approve the transaction on MetaMask and you are all set. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+        <div class="faq__detail border-b-gold">
+          <details>
+            <summary class="py-4 text-[20px]">What is an NFT ?</summary>
+            <p class="py-4">NFT stands for 'non-fungible token'.
+              A NFT is basically data that is accounted for in a digital ledger, and that data represents something
+              specific and unique.
+              A NFT can, for example, represent a unique piece of art or a game token. </p>
+          </details>
+          <hr class="bg-gold w-full">
+        </div>
+      </div>
+    </div>
+    <div class="part flex flex-col items-center">
+      <h2 class="text-white text-5xl mb-2">BE PART TO OUR COMMUNITY</h2>
+      <h3 class="text-gold text-5xl mb-2">JOIN OUR DISCORD</h3>
+      <p class="text-white mb-10">Find all the answer of your queﬆions on our DISCORD</p>
+      <img class="mb-32" src="./src/images/png/discord-panel.png" alt="">
+      <hr class="bg-gold w-full mb-16">
+    </div>
+    <div class="footer flex justify-around items-center pb-7">
+      <ul class="flex flex-col links">
+        <li class="text-white text-2xl lg:text-base mb-7"><a href="">About us</a></li>
+        <li class="text-white text-2xl lg:text-base mb-7"><a href="">Membership</a></li>
+        <li class="text-white text-2xl lg:text-base mb-7"><a href="">Roadmap</a></li>
+        <li class="text-white text-2xl lg:text-base mb-7"><a href="">Community</a></li>
+      </ul>
+      <div class="footer__logo flex flex-col items-center">
+        <img class="mb-6" src="./src/images/logo.png" alt="">
+        <p class="mb-8 text-dark-gold leading-4 uppercase logo w-full text-center">Seaside investment
+          club</p>
+        <span class="text-white">©2022 Seaside investment club. All rights reserved</span>
+      </div>
+      <div class="footer__link2">
+        <ul class="flex justify-around items-center gap-8 mb-7">
+          <li><a href="/"><img src="src/images/svg/facebook-gradient.svg" alt=""></a></li>
+          <li><a href="/"><img src="src/images/svg/instagram-gradient.svg" alt=""></a></li>
+          <li><a href="/"><img src="src/images/svg/discord-gradient.svg" alt=""></a></li>
+          <li><a href="/"><img src="src/images/svg/ship-gradient.svg" alt=""></a></li>
+        </ul>
+        <ul class="flex-flex-col text-white">
+          <li class="text-right mb-4"><a href="">OUR TEAM</a></li>
+          <li class="text-right mb-4"><a href="">SMART CONTRACT</a></li>
+          <li class="text-right mb-4"><a href="">TERMS of service</a></li>
+          <li class="text-right mb-4"><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </div>
+  <script type="module" src="/main.js">
+  </script>
+</body>
+
+</html>

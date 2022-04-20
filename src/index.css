@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Ginora-Regular';
+  src: url('./fonts/GinoraSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Ginora-SemiBold';
+  src: url('./fonts/GinoraSans-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Ginora-Bold';
+  src: url('./fonts/GinoraSans-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'TrajanPro-Regular';
+  src: url('./fonts/TrajanPro-Regular.woff2') format('woff2');
+}
